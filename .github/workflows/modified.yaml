@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v3  
       
       # CINTENT >> INSERT_CINTENT
-      - uses: JavidDitty/setup-cintent@71bd856662c7fab8b08c99aedbfd7c3992cfdf95
+      - uses: JavidDitty/setup-cintent@23f433fdb37d0a420804269a89ed1940368546fe
 
       - name: Set up Python ${{ matrix.python-version }}  
         uses: actions/setup-python@v4  
