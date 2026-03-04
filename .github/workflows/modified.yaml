@@ -25,13 +25,13 @@ jobs:
         with:  
           python-version: ${{ matrix.python-version }} 
 
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
       # CINTENT >> INSERT_CINTENT
       - uses: JavidDitty/setup-cintent@3638849e94bdb037f0a405375686a8550e6df904
         with:
           nonblocking: true
-
-      - name: Install Poetry
-        uses: snok/install-poetry@v1
 
       - name: Install dependencies  
         run: |  
